@@ -13,7 +13,8 @@ from xml.etree import ElementTree as ET
     default="-",
     help="File to write output to",
 )
-def cli(path, output):
+@click.option("-s", "--single", is_flag=True, help='Output single "line": per item')
+def cli(path, output, single):
     "Convert TTML to JSON"
     et = ET.parse(path)
     els = et.findall(".//{http://www.w3.org/ns/ttml}div/{http://www.w3.org/ns/ttml}p")
@@ -25,6 +26,9 @@ def cli(path, output):
         }
         for el in els
     ]
+    if single:
+        for d in dicts:
+            d["line"] = "\n".join(d.pop("lines"))
     output.write(json.dumps(dicts, indent=2))
     output.write("\n")
     return

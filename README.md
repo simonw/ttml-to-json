@@ -21,9 +21,34 @@ To output JSON for a TTML file:
 
 This will output to standard output. Use `-o filename` to send it to a specified file.
 
+Use `-s` or `--single` to output single `"line"` keys instead of a `"lines"` array.
+
 You can also use:
 
     python -m ttml_to_json ...
+
+## Output
+
+Regular output:
+```json
+[
+    {
+        "start": "00:00:00.000",
+        "end": "00:00:04.560",
+        "lines": ["my career in side projects and open"]
+    }
+]
+```
+`-s` or `--single` output:
+```json
+[
+    {
+        "start": "00:00:00.000",
+        "end": "00:00:04.560",
+        "line": "my career in side projects and open"
+    }
+]
+```
 
 ## Development
 
