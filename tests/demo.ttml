@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tt xml:lang="en" xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:profile="http://www.w3.org/TR/profile/sdp-us" >
+<head>
+<styling>
+<style xml:id="s1" tts:textAlign="center" tts:extent="90% 90%" tts:origin="5% 5%" tts:displayAlign="after"/>
+<style xml:id="s2" tts:fontSize=".72c" tts:backgroundColor="black" tts:color="white"/>
+</styling>
+<layout>
+<region xml:id="r1" style="s1"/>
+</layout>
+</head>
+<body region="r1">
+<div>
+<p begin="00:00:00.000" end="00:00:04.560" style="s2">my career in side projects and open</p>
+<p begin="00:00:01.839" end="00:00:07.359" style="s2">source basically this is so i&#39;ve been</p>
+<p begin="00:00:04.560" end="00:00:08.880" style="s2">knocking around with um uh side projects</p>
+<p begin="00:00:07.359" end="00:00:11.519" style="s2">and open source things that</p>
+<p begin="00:00:08.880" end="00:00:12.719" style="s2">20 years now it turns out and i realized</p>
+<p begin="00:00:11.519" end="00:00:14.880" style="s2">recently that</p>
+<p begin="00:00:12.719" end="00:00:16.160" style="s2">every key moment in my career started</p>
+<p begin="00:00:14.880" end="00:00:18.240" style="s2">out as a side project</p>
+</div>
+</body>
+</tt>

@@ -15,13 +15,15 @@ Install this tool using `pip`:
 
 ## Usage
 
-For help, run:
+To output JSON for a TTML file:
 
-    ttml-to-json --help
+    ttml-to-json subtitles.ttml
+
+This will output to standard output. Use `-o filename` to send it to a specified file.
 
 You can also use:
 
-    python -m ttml_to_json --help
+    python -m ttml_to_json ...
 
 ## Development
 
